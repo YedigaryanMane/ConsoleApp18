@@ -9,8 +9,7 @@ namespace ConsoleApp18
 {
     internal class Program
     {
-       
-
+      
         public static void AddPlanet(string[] planets,int id,string name,string oldName,int numOfSatellites)
         {
             int index = GetFirstEmptyIndex(planets);
@@ -29,6 +28,7 @@ namespace ConsoleApp18
                     return i;
                 }
             }
+
             return -1;
         }
 
@@ -50,6 +50,7 @@ namespace ConsoleApp18
                     return i;
                 }
             }
+
             return -1;
         }
 
@@ -59,7 +60,6 @@ namespace ConsoleApp18
             {
                 if (planets[i] == id.ToString())
                 {
-
                     planets[i + 1] = name;
                     planets[i + 2] = oldName;
                     planets[i + 3] = numOfSatellites.ToString();
@@ -75,6 +75,7 @@ namespace ConsoleApp18
                     Console.WriteLine(planets[i]);
                 }
             }
+
             Console.WriteLine("\n");
         }
 
